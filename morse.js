@@ -10,7 +10,7 @@ var toConvert = prompt("Enter phrase to convert");
 var converted = "";
 for(var i = 0; i < toConvert.length; i++)
 {
-  var letter = toConvert.charAt(i);
+  var letter = toConvert.charAt(i).toLowerCase();
   for(var j = 0; j < english.length; j++){
     if(letter == english[j]){
       converted += morse[j]; + " "
